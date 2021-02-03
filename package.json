@@ -1,0 +1,16 @@
+{
+  "name": "threejs-drawing",
+  "version": "1.0.0",
+  "description": "2D to 3D drawing canvas",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Christian Sumano",
+  "license": "ISC"
+}

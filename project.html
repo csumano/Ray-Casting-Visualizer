@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <link href="/styles/main.css" rel="stylesheet" type="text/css">
+    <style>
+    </style>
+</head>
+<button data-modal-target="#modal" class="button">Instructions</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">2D to 3D Drawing Canvas</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <b>Purpose:</b>
+      <br> This project demonstrates an important
+      computer graphics concept, <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Ray_casting">Ray Casting</a>. Ray casting solves various 
+      3D problems with the use of intersection tests. In this project you are 
+      the eye and the canvas is a 3D space and the ray cast is the mouse.
+      Clicking will determine a (x,y,z) cooridinate in 3D space to create a 
+      visible point. A segment is drawn from the first ray cast to the next in 
+      (x,y) space. Pressing shift will stop the ray cast. We can take these (x,y,z) 
+      cooridinates to calculate a three dimensional space to create a solid geometric object. The 
+      user can also turn on and off the ray case segments to visualize how it works.    
+      <br> <b>Directions:</b>
+      <br> <b>CLICK MOUSE </b> - to create a point(s)
+      <br> <b>SHIFT</b> - button to stop drawing segments
+      <br> Press the 'Make3D' button to turn the segments into 3D
+      <br>  - Afterwards use the mouse to click on the canvas and move around the world space
+      <br> Press the 'AddSegments' to draw more lines (world movement is fixed)
+      <br> Press the 'RayCast' to see visible ray cast lines (indicated with an arrow)
+      <br> Press the 'RemoveRayCast' to remove and stop ray cast lines
+      <br> Press the 'reset' button to reset the canvas
+     
+    </div>
+  </div>
+  <output name="output1"></output>
+  <div id="overlay"></div>
+  
+  <h1 class ="pixels"><span id="pixelsX" ></span></h1>
+  <h1 class ="pixels" id="pixelsY"><span id="pixelsY" ></span></h1>
+<body>
+    <script src="/js/project.js" type = "module"></script>
+    <script src="/js/vendor/dat.gui.min.js"></script>
+</body>
+
+</html>
